@@ -1,0 +1,15 @@
+.contentData{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    .titleContent{
+        display: flex;
+        h1{
+            margin-left: auto;
+            font-size: 30px;
+            font-weight: bold;
+            bottom:0.1em;
+            position: relative;
+        }
+    }
+}

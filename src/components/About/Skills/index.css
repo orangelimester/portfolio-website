@@ -1,0 +1,303 @@
+.skillsFlex {
+    display: flex;
+}
+
+.skillDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.SkillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Skills {
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-left: 3.5px solid rgb(135, 231, 255);
+    border-top: 3.5px solid rgb(135, 231, 255);
+    border-right: 3.5px solid rgb(122, 104, 255);
+    border-bottom: 3.5px solid rgb(122, 104, 255);
+    border-radius: 10px;
+    gap: 2rem;
+    background-image: linear-gradient(to right, rgb(31, 18, 80), rgb(17, 13, 85), rgb(26, 12, 61));
+}
+
+.skillIcon {
+    font-size: 18px;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    span {
+        position: relative;
+        bottom: 1.1rem;
+    }
+    svg {
+        margin: auto;
+        height: 3rem;
+        width: 2.5rem;
+        position: relative;
+        bottom: 0.8rem;
+    }
+}
+
+.myDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 55lvh;
+}
+@media only screen and (max-width: 700px) {
+    .skillIcon {
+        font-size: 16px;
+        width: 1rem;
+        height: 0rem;
+        text-align: center;
+        margin: 0rem;
+        align-items: flex-start;
+        span {
+            position: relative;
+            bottom: 0rem;
+            display: none;
+        }
+        svg{
+            margin: auto;
+            height: 4rem;
+            width: 1rem;
+            position: relative;
+            bottom: 0.3rem;
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .SkillsContainer{
+        flex-direction: column;
+
+    }
+    .myDetails {
+        flex-direction: column;
+        gap: 0rem;
+        padding-left: 20%;
+        margin-top: -3rem;
+    }
+    .skillDetails{
+        justify-content: flex-start;
+        gap:0em;
+        margin-top: -3rem;
+        margin-right: auto;
+    }
+    .detailsContainer {
+        font-size: 12px;
+        width: 20%;
+        margin-top: -2rem;
+    }
+    .skillIcon {
+        font-size: 16px;
+        width: 2rem;
+        height: 1rem;
+        text-align: center;
+        margin: 0.5rem;
+        align-items: flex-start;
+        span {
+            position: relative;
+            bottom: 0rem;
+            display: none;
+        }
+        svg{
+            margin: auto;
+            height: 2rem;
+            width: 2.5rem;
+            position: relative;
+            bottom: 0.3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width:1500px) {
+
+   
+    .Skills {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+  
+    .myDetails {
+        flex-direction: column;
+        gap: 0;
+        padding-left: 20%;
+    }
+    .skillDetails {
+        flex-direction: row;
+        gap: 3rem;
+        margin-top: -4rem;
+    }
+
+    .detailsContainer {
+        font-size: 18px;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:950px) and (max-width:1300px) {
+    .skillDetails {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .detailsContainer{
+        margin-top: -4rem;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .skillDetails {
+        flex-direction: row;
+        gap: 0em;
+        justify-content: space-evenly;
+    }
+    .skillIcon {
+        font-size: 16px;
+        width: 2rem;
+        height: 1rem;
+        text-align: center;
+        margin: 0;
+        align-items: flex-start;
+        span {
+            position: relative;
+            bottom: 0rem;
+            display: none;
+        }
+        svg{
+            margin: auto;
+            height: 0.5rem;
+            width: 0rem;
+            position: relative;
+            bottom: 1.3rem;
+        }
+    }
+    .detailsContainer {
+        font-size: 16px;
+        width: 90%;
+        margin-top: -1rem;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .Skills {
+        flex-direction: column;
+        gap: 1em;
+        height: 2rem;
+        justify-content: space-evenly;
+    }
+
+    .skillDetails {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .SkillsContainer {
+        display: flex;
+        flex-direction: row;
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .skillIcon {
+        font-size: 16px;
+        width: 1rem;
+        height: 1rem;
+        text-align: center;
+        margin: 0;
+        align-items: flex-start;
+        span {
+            position: relative;
+            bottom: 0rem;
+            display: none;
+        }
+        svg{
+            margin: auto;
+            height: 77rem;
+            width: 2rem;
+            position: relative;
+            bottom: 1.3rem;
+        }
+    }
+
+    .detailsContainer {
+        font-size: 16px;
+        width: 90%;
+        margin-top: -1rem;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .Skills {
+        flex-direction: row;
+        gap: 0em;
+        height: 3rem;
+        width: 65lvw;
+        justify-content: space-evenly;
+    }
+    .myDetails{
+        margin-top: -4rem;
+    }
+    .skillDetails {
+        flex-direction: column;
+        gap: 0em;
+        margin-top: -5rem;
+    }
+
+    .SkillsContainer {
+        display: flex;
+        flex-direction: column;
+        gap:0rem;
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .skillIcon {
+        font-size: 16px;
+        width: 0rem;
+        height: 2rem;
+        text-align: center;
+        margin: 1rem;
+        justify-content: space-evenly;
+        span {
+            position: relative;
+            bottom: 0rem;
+            display: none;
+        }
+        svg{
+            margin: auto;
+            height: 1.5rem;
+            width: 2rem;
+            position: relative;
+            bottom: 1.3rem;
+        }
+    }
+
+    .detailsContainer {
+        font-size: 14px;
+        width: 90%;
+        margin-top: -2rem;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .myDetails {
+        font-size: 22px;
+    }
+}

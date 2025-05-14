@@ -1,0 +1,37 @@
+.SummaryFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+h1 {
+    font-size: 30px;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linkBtn{
+    height: 3rem;
+    min-width: 8rem;
+    border-radius: 15px;
+    border-left: 4px solid rgb(135, 231, 255);
+    border-top: 4px solid rgb(135, 231, 255);
+    border-right: 4px solid rgb(122, 104, 255);
+    border-bottom: 4px solid rgb(122, 104, 255);
+    color: var(--ft-color-secondary);
+    background-color: rgb(20, 15, 44);
+    padding: 0.5rem;
+    transition: 100ms;
+    z-index: 2;
+    &:hover{
+        border: 2px solid rgb(4, 63, 255);
+        background-color: rgb(50, 74, 255);
+        color: rgb(247, 155, 89);
+        font-weight: bolder;
+    }
+}

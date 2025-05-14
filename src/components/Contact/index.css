@@ -1,0 +1,67 @@
+.contactFlex {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    h1 {
+        font-size: 48px;
+    }
+}
+
+.contactTitle {
+    top: -1rem;
+    position: relative;
+}
+.contactForm{
+    text-align: left;
+
+}
+.formFlex{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    input, textarea{
+        background-color: rgb(11, 0, 43);
+        padding-left: 0.4em;
+        border-radius: 7px;
+        &:nth-child(3){
+            height: 7em;
+            resize: none;
+        }
+    }
+}
+.submitBtn{
+    margin-top: 1em;
+    height: 2rem;
+    min-width: 6rem;
+    border-radius: 15px;
+    border-left: 4px solid rgb(255, 239, 135);
+    border-top: 4px solid rgb(249, 252, 176);
+    border-right: 4px solid rgb(227, 134, 248);
+    border-bottom: 4px solid rgb(255, 104, 167);
+    color: var(--ft-color-secondary);
+    background-color: rgb(20, 15, 44);
+    cursor:pointer;
+    transition: 200ms;
+    z-index: 2;
+    &:hover{
+        border: 3px solid rgb(4, 121, 255);
+        background-color: rgb(50, 118, 255);
+        color: rgb(250, 226, 130);
+        font-weight: bolder;
+    }
+}
+@media only screen and (max-width: 1000px)  {
+    .contactFlex{
+        h1 {
+            font-size: 26px;
+        }
+        h4,textarea,input{
+            font-size: 18px;
+        }
+    }
+   
+}

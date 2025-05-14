@@ -1,0 +1,18 @@
+.NamePicFlex{
+    display: flex;
+    flex-direction: column;
+    width: 30lvw;
+    align-items: center;
+
+}
+.Name{
+    display: flex;
+    height: 40lvh;
+    align-items: flex-end;
+    text-align: center;
+}
+.Picture{
+    display: flex;
+    justify-content: center;
+    height: 60lvh;
+}

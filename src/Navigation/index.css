@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-image: linear-gradient(to right, rgb(28, 0, 97), rgb(14, 8, 46));
+    width: 100%;
+    transition: opacity 100ms;
+    z-index: 99999;
+
+    &.closed {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &.opened {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    border-top: 2px solid rgb(135, 231, 255);
+    border-bottom: 2px solid rgb(122, 104, 255);
+    justify-content: right;
+    border-radius: 10px;
+}
+
+.navItem {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    cursor: pointer;
+    transition: 200ms;
+
+    &:hover {
+        background-color: rgb(50, 74, 255);
+        color: rgb(247, 155, 89);
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .navItem {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.8em;
+        padding-top: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width:1500px) {}
+
+@media only screen and (min-width:950px) and (max-width:1300px) {}
+
+@media only screen and (max-width:950px) {}
+
+@media only screen and (max-width:850px) {}
+
+@media only screen and (max-width:750px) {}
+
+@media only screen and (min-width: 1500px) {}

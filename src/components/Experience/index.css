@@ -1,0 +1,127 @@
+.expFlex {
+    display: flex;
+    height: 60lvh;
+    width: 90lvw;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+
+}
+
+.expTitle {
+    top: -1rem;
+    position: relative;
+}
+
+.card {
+    height: 10rem;
+    cursor: pointer;
+    width: 20rem;
+    border-left: 3.5px solid rgb(135, 231, 255);
+    border-top: 3.5px solid rgb(135, 231, 255);
+    border-right: 3.5px solid rgb(122, 104, 255);
+    border-bottom: 3.5px solid rgb(122, 104, 255);
+    border-radius: 15px;
+    color: var(--ft-color-secondary);
+    background-color: rgb(20, 15, 44);
+    padding: 0.5rem;
+    transition: 100ms;
+    z-index: 2;
+
+    &:hover {
+        border: 2px solid rgb(4, 63, 255);
+        background-color: rgb(50, 74, 255);
+        color: rgb(248, 195, 158);
+        font-weight: bolder;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+}
+
+.modal .overlay {
+    position: fixed;
+    height: 100lvh;
+    width: 100lvw;
+
+}
+
+.overlay {
+    background-color: rgb(48, 48, 48);
+    transition: opacity 200ms ease-in-out;
+}
+
+.overlay.closed {
+    opacity: 0;
+    z-index: 0;
+}
+
+.overlay.opened {
+    opacity: 0.3;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal-content {
+    background-color: rgb(17, 16, 35);
+    z-index: 100001;
+    border-left: 3.5px solid rgb(199, 248, 253);
+    border-top: 3.5px solid rgb(135, 223, 255);
+    border-right: 3.5px solid rgb(104, 167, 255);
+    border-bottom: 3.5px solid rgb(104, 144, 255);
+    line-height: 1.4;
+    padding: 20px 20px;
+    height: fit-content;
+    width: fit-content;
+    transform: translate(-40%, -40%);
+    position: fixed;
+}
+
+.modal-content.closed {
+    top: -30%;
+    left: 47%;
+    transition: top 400ms;
+}
+
+.modal-content.opened {
+    transition: top 200ms;
+    top: 40%;
+    left: 47%;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 800px) and (max-width:1500px) {
+    .expTitle{
+        margin-top: 0rem;
+        margin-bottom: -1rem;
+        h1{
+            font-size: 48px;
+        }
+    }
+}
+@media only screen and (min-width:950px) and (max-width:1300px) {
+    .expTitle{
+        margin-top: 4rem;
+        margin-bottom: -2rem;
+
+        h1{
+            font-size: 48px;
+        }
+    }
+    
+}
+@media only screen and (max-width:800px) {
+    .expTitle{
+        margin-top: -2rem;
+        margin-bottom: -1rem;
+
+        h1{
+            font-size: 42px;
+        }
+    }
+}
